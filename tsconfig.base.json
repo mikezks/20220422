@@ -15,6 +15,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@projected-routes/recherche/domain": [
+        "libs/recherche/domain/src/index.ts"
+      ],
+      "@projected-routes/recherche/feature-common": [
+        "libs/recherche/feature-common/src/index.ts"
+      ],
       "@projected-routes/trefferlist/domain": [
         "libs/trefferlist/domain/src/index.ts"
       ],

@@ -3,7 +3,9 @@
   "version": 2,
   "projects": {
     "recherche": "apps/recherche",
+    "recherche-domain": "libs/recherche/domain",
     "recherche-e2e": "apps/recherche-e2e",
+    "recherche-feature-common": "libs/recherche/feature-common",
     "trefferlist-domain": "libs/trefferlist/domain",
     "trefferlist-feature-common": "libs/trefferlist/feature-common"
   }

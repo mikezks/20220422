@@ -56,6 +56,13 @@
                   "domain:trefferlist",
                   "domain:shared"
                 ]
+              },
+              {
+                "sourceTag": "domain:recherche",
+                "onlyDependOnLibsWithTags": [
+                  "domain:recherche",
+                  "domain:shared"
+                ]
               }
             ]
           }

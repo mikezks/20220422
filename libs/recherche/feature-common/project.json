@@ -1,0 +1,41 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/recherche/feature-common/src",
+  "prefix": "recherche",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "outputs": ["dist/libs/recherche/feature-common"],
+      "options": {
+        "project": "libs/recherche/feature-common/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/recherche/feature-common/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/recherche/feature-common/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/recherche/feature-common"],
+      "options": {
+        "jestConfig": "libs/recherche/feature-common/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/recherche/feature-common/**/*.ts",
+          "libs/recherche/feature-common/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["domain:recherche", "type:feature"]
+}
