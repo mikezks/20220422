@@ -14,7 +14,14 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@projected-routes/trefferlist/domain": [
+        "libs/trefferlist/domain/src/index.ts"
+      ],
+      "@projected-routes/trefferlist/feature-common": [
+        "libs/trefferlist/feature-common/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

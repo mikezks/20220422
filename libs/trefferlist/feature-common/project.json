@@ -1,0 +1,41 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/trefferlist/feature-common/src",
+  "prefix": "trefferlist",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "outputs": ["dist/libs/trefferlist/feature-common"],
+      "options": {
+        "project": "libs/trefferlist/feature-common/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/trefferlist/feature-common/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/trefferlist/feature-common/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/trefferlist/feature-common"],
+      "options": {
+        "jestConfig": "libs/trefferlist/feature-common/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/trefferlist/feature-common/**/*.ts",
+          "libs/trefferlist/feature-common/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["domain:trefferlist", "type:feature"]
+}
