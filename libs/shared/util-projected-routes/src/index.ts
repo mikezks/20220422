@@ -1,1 +1,1 @@
-export * from './lib/shared-util-projected-routes.module';
+export * from './lib/projected-routes';
