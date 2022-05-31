@@ -6,6 +6,7 @@
     "recherche-domain": "libs/recherche/domain",
     "recherche-e2e": "apps/recherche-e2e",
     "recherche-feature-common": "libs/recherche/feature-common",
+    "shared-util-projected-routes": "libs/shared/util-projected-routes",
     "trefferlist-domain": "libs/trefferlist/domain",
     "trefferlist-feature-common": "libs/trefferlist/feature-common"
   }

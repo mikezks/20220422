@@ -21,6 +21,9 @@
       "@projected-routes/recherche/feature-common": [
         "libs/recherche/feature-common/src/index.ts"
       ],
+      "@projected-routes/shared/util-projected-routes": [
+        "libs/shared/util-projected-routes/src/index.ts"
+      ],
       "@projected-routes/trefferlist/domain": [
         "libs/trefferlist/domain/src/index.ts"
       ],

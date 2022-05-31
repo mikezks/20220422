@@ -1,0 +1,41 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/shared/util-projected-routes/src",
+  "prefix": "projected-routes",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "outputs": ["dist/libs/shared/util-projected-routes"],
+      "options": {
+        "project": "libs/shared/util-projected-routes/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/shared/util-projected-routes/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/shared/util-projected-routes/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared/util-projected-routes"],
+      "options": {
+        "jestConfig": "libs/shared/util-projected-routes/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/util-projected-routes/**/*.ts",
+          "libs/shared/util-projected-routes/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["domain:shared", "type:util"]
+}
