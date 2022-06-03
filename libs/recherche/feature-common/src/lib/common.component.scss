@@ -2,3 +2,9 @@
   border: 1px solid;
   padding: 10px;
 }
+
+:host {
+  display: block;
+  border: 2px dashed blue;
+  padding: 20px;
+}
